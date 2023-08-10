@@ -1,0 +1,134 @@
+body ,html{
+margin:0;
+height: fit-content;
+}
+header{
+    display:flex;
+    justify-content: center;
+    align-items: baseline;
+    position:absolute;
+    top:0;
+    left:0;
+    
+    width: 100%;
+    z-index: 10;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: baseline;
+    width: 100%;
+    margin:0 15px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: baseline;
+    flex-basis: 30%;
+}
+
+.logo-container h1{
+     font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    color: #D2D3C9;
+    /* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+}
+
+span {
+    color: #FF5F00;
+    font-size: 50px;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-basis:65%;
+}
+.nav-items ul{
+    padding-left: 0;
+}
+.nav-items  li{
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    display: inline-block;
+    z-index: 1;
+    margin-right: 32px;
+
+}
+li a{
+    color:white;
+    font-size: large;
+
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif;
+}
+li a::before {
+    content: "";
+    background-color: red;
+    position: absolute;
+    color: gainsboro;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    height: 3px;
+    width: 110%;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: transform .3s linear;
+}
+
+li a:hover::before,
+a:hover {
+    transform: scalex(1);
+    transform-origin: left;
+    color: orangered;
+
+}
+.sign-up{
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 25%;
+}
+.sign-up a{
+    padding: 15px 10px 15px 34px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    clip-path: polygon(21% 4%, 100% 5%, 100% 100%, 0% 100%);
+}
+
+
+.carousel {
+    margin-bottom: 4rem;  
+     
+}
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+    
+}
+.carousel-item {
+    height: 90vh;
+    
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height:90vh;
+}
+.overlay-image{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    background-position: center;
+    background-size:cover;
+}
