@@ -251,9 +251,10 @@ a:hover {
     display: flex;
     flex-direction: column;
    gap:25px ;
-    background-color: #61677A;
+    background-color: #393646;
     color:white;
     margin-top: 20px;
+    padding-bottom: 30px;
 }
 .class-title{
    padding-top: 25px;
@@ -261,6 +262,9 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+.class-title h1 span{
+    font-size: inherit;
 }
 .classes{
     display: flex;
@@ -277,6 +281,7 @@ background-color: #1b1b1b;
 margin-bottom: 20px;
 padding-bottom: 10px;
 border-radius: 15px;
+border-style:2px  solid white;
 }
 .class-items >h3{
     background-color: orangered;
@@ -284,25 +289,67 @@ border-radius: 15px;
     padding-bottom: 10px;
     padding-left: 5px;
 }
+.class-items a{
+text-decoration: none;
+color: grey;
+padding-left: 5px;
+
+}
 .class_4{
   
 }
 .cta{
-    height:400px;
+    display: flex;
+    position: relative;
+    height:60vh;
     overflow: hidden;
+    background-color: black;
   
 }
 .cta img{
-   width:100%;
-  position:relative;
-  bottom:350px;
+   aspect-ratio: 16/4;
+    min-width: 100vw;
+    object-fit: cover;
+    vertical-align:top;   
+    position:relative;
+    opacity:0.3;
+ 
 }
 .cta-text{
-    position:relative;z-index: 10;
-    text-align: center;
-    top:50%;
+    position:absolute;z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     color:white;
+}
+.cta-title{
+    text-align: center;
+}
+.cta-item{
+    display:flex;
+   font-family:  'Montserrat', sans-serif;
+   font-weight: 600;
+    font-size: 30px;
+}
+.cta-item > *{
+    border-right: thick solid #ff0000;
+    padding-left: 5px;
+    text-align: center;
+}
 
+.payment-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:40px;
+}
+.payment-plan{
+    display:flex;
+    flex-direction: column;
+}
+.plan-b{
+    
 }
 
 /* responsive csss*/
