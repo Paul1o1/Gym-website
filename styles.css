@@ -135,7 +135,10 @@ a:hover {
     background-color: rgb(173, 51, 7);
 }
 
+
+
 .carousel-inner {
+   
     height: 85vh;
 
 }
@@ -253,62 +256,100 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    background-color: #393646;
-    color: white;
+   
+    color: rgb(11, 11, 11);
     margin-top: 20px;
-    padding-bottom: 30px;
+    padding: 40px ;
+}
+.class-border{
+    height: 3px;
+    width: 400px;
+    position: relative;
+    background:orangered;
+    border-radius: 50%;
+    margin-bottom: 30px;
 }
 
 .class-title {
-    padding-top: 25px;
+    padding: 25px 0;
     display: flex;
-    font-family: 'Roboto Slab', serif;
+    font-family:'Montserrat', sans-serif;
+    font-weight:800;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    text-shadow: 5px 5px 8px black;
+    /* text-shadow: 5px 5px 8px black; */
 }
 
 .class-title h1 span {
+    font-weight: 800;
     font-size: inherit;
    
 }
-
+               
 .classes {
-    display: flex;
+    display: flex; 
     justify-content: space-around;
     flex-wrap: wrap;
 
 }
 
 .img-container img {
+    display:flex;
     height: 400px;
     width: 300px;
+   
 }
 
 .class-items {
-    background-color: #1b1b1b;
+    display:flex;
+    position: relative;
     margin-bottom: 20px;
-    padding-bottom: 10px;
+    flex-basis: 45%;
     border-radius: 15px;
-    border-style: 2px solid white;
-}
+    border-right: 3px solid gray;
+    justify-content: space-between;
+    /* border: 2px solid orangered; */
+    overflow: hidden;
+   background-color: white;
 
-.class-items>h3 {
+   }
+
+.class-item-title {
+    
+    position:absolute;
+    left:-220px;
+    bottom:0;
     background-color: orangered;
     clip-path: polygon(0 0%, 81% 0%, 100% 100%, 0% 100%);
-    padding-bottom: 10px;
-    padding-left: 5px;
+    padding-right: 30px;
+    transition: all 0.7s ease-in-out;
 }
-
+.img-container:hover + .class-item-title{
+     left:0;
+    }
+.class-text{
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    justify-content: flex-end;
+}
 .class-items a {
+    display:flex;
+    align-items: flex-end;
+    justify-self: flex-end;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    color: grey;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
     padding-left: 5px;
-
+}
+.class-items a:hover{
+    color: orangered;
 }
 
-.class_4 {}
+
                             /* call to action page */
 .cta {
     display: flex;
@@ -361,7 +402,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding: 150px 0;
 }
 .payment-title{
     text-align: center;
@@ -380,7 +421,7 @@ a:hover {
     gap: 50px;
     flex-wrap: wrap;
     align-items: center;
-    padding: 40px;
+    padding:  40px;
 }
 
 .payment-plan {
@@ -439,6 +480,7 @@ h2 {
 .community-text{
     display: flex;
     flex-direction: column;
+   gap:20px;
     font-family: 'Montserrat',sans-serif;
     margin-top: 10%;
     width:40vw;
@@ -446,6 +488,16 @@ h2 {
 }
 .community-text h1{
     font-weight: 800;
+}
+.community-border{
+height: 3px;
+width: 200px;
+position: relative;
+background:orangered;
+border-radius: 50%;
+margin-bottom: 30px;
+margin-left: 18%;
+
 }
 .community-images{
     position: relative;
@@ -476,9 +528,76 @@ h2 {
     left:0;
 
 }
-.rrr{
+.trainers-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:50px;
+    align-items: center;
     padding-top: 400px;
 }
+.trainer-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:  'Montserrat',sans-serif;
+    ;
+    font-weight: 800;
+    text-align: center;
+}
+.trainers-container{
+    display: flex;
+    gap:40px;
+}
+.trainers{
+    font-family:  'Montserrat',sans-serif;
+    text-align: center;  
+    border: 3px solid grey;
+    border-radius: 15px;
+    overflow: hidden;
+   
+}
+.boarder{
+    height: 3px;
+width: 500px;
+position: relative;
+background:orangered;
+border-radius: 50%;
+}
+ img{
+    width:200px;
+}
+.trainer-text{
+    
+}
+.trainer-text h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+.trainer-text p{
+    font-size: 15px;
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #060606;
+    color:white;
+    font-family:  'Montserrat',sans-serif;
+    margin-top: 60px;
+    padding: 30px 0;
+}
+.footer-item > h3{
+font-size: 12px;
+}
+.footer-item > h2{
+    font-size: 25px;
+}
+.footer-logo p{
+    width: 300px;
+}
+
 
 
 /* responsive csss*/
@@ -619,7 +738,7 @@ h2 {
         text-align: center;
         width:60vw;
        }
-       .rrr{
+       .trainers-section{
         padding-top: 500px;
     }
 
