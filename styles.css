@@ -433,7 +433,7 @@ a:hover {
 
 .payment-plan {
     text-align: center;
-    width: 300px;
+    width: 290px;
     border: 1px solid grey;
     border-radius: 10%;
 }
@@ -565,7 +565,32 @@ margin-bottom: 30px;
     justify-content: center;
     gap:40px;
 }
+.trainer-links{
+   display: flex;
+    gap:5%;
+   position: absolute;z-index: 100;
+   color:silver;
+   width:100%;
+   justify-content: center;
+   top:70%;
+   font-size: 250%;
+   opacity: 0;
+   transition: all 0.7s ease-in-out;
+}
+.trainer-1:hover .trainer-links-1{
+    opacity: 1;
+    top:40%;
+}
+.trainer-2:hover .trainer-links-2{
+    opacity: 1;
+    top:40%;
+}
+.trainer-3:hover .trainer-links-3{
+    opacity: 1;
+    top:40%;
+}
 .trainers{
+    position:relative;
     font-family:  'Montserrat',sans-serif;
     text-align: center;  
     border: 3px solid grey;
@@ -581,7 +606,8 @@ background:orangered;
 border-radius: 50%;
 }
  img{
-    width:40vw;
+    z-index: 9;
+    width:26vw;
 }
 .trainer-text{
     
@@ -603,7 +629,7 @@ border-radius: 50%;
     color:white;
     font-family:  'Montserrat',sans-serif;
     margin-top: 60px;
-    padding: 3% 5%;
+    padding: 3% 3% 3% 5%;
 }
 .footer-item{
     padding-top: 3%;
@@ -616,12 +642,16 @@ font-size: 12px;
     font-size: 25px;
 }
 .footer-logo p{
-    width: 20vw;
+    width: 35vw;
 }
 .footer-hours{
     display: flex;
     flex-direction: column;
 
+}
+.footer-hours h3{
+    border-right: 1px solid white;
+    padding-left:3%;
 }
 
 
@@ -724,11 +754,11 @@ font-size: 12px;
     }
 
     .cta-item {
-        font-size: 20px;
+        font-size:70%;
     }
 
     .cta-title h1 {
-        font-size: 30px;
+        font-size: 110%;
     }
 
     .payment-text>h3,
@@ -776,6 +806,9 @@ font-size: 12px;
        .trainers-section{
         padding-top:55% ;
     }
+    .footer-logo p{
+        width: 25vw;
+    }
 
     }
     @media(max-width:850px){
@@ -795,13 +828,14 @@ font-size: 12px;
         .footer{
             gap:20%;
         }
+        .footer-logo p{
+            width:100%;
+        }
         .footer-item > h1,  .footer-item > h2,  .footer-item > p{
             font-size: 80%;
 
         }
-        .footer-logo > p{
-            width:100%;
-        }
+       
         .footer-hours{
             flex-direction: row;
             align-items:last baseline;
@@ -809,6 +843,7 @@ font-size: 12px;
             order:5;
             width:120%;
         }
+       
 
     }
 
@@ -878,6 +913,15 @@ font-size: 12px;
         .trainers-container{
           
         }
+        img{
+            width:36vw;
+        }
+        .boarder{
+            width:400px;
+        }
+        .community-images{
+            left: -10%;
+        }
     }
 
     @media(max-width:490px){
@@ -899,9 +943,7 @@ font-size: 12px;
             font-size: 60%;
             padding: 6px 12px 7px 23px;
         }
-        .carousel-inner{
-            height:100vh;
-        }
+        
         .carousel-text{
             top:60px;
             left:40px;
@@ -931,15 +973,21 @@ font-size: 12px;
         .class-text p, .class-text a, .class-text h3{
             font-size: 60%;
         }
+        .community-text {
+           padding-left: 0;
+        }
         .community-images {
             left: -45px;
         }
-        .boarder{
+        .boarder, .class-border{
             height: 3px;
         width: 300px;
         }
         .cta {
             height: 30vh;
+        }
+        img{
+            width:42vw;
         }
         .footer-hours > h3{
             font-size: 50%;
