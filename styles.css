@@ -442,7 +442,7 @@ a:hover {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    padding: 0 10%;
+    padding: 0 8%;
 }
 
 .payment-text p {
@@ -453,7 +453,7 @@ a:hover {
 
 .payment-plan h3,.payment-plan
 h2 {
-    padding: 10% 0;
+    padding: 8% 0;
     text-align: center;
 }
 .payment-plan h2{
@@ -713,6 +713,12 @@ font-size: 12px;
         letter-spacing: 2px;
 
     }
+    .class-text{
+        width: 100%;
+    }
+    .class-text p, .class-text a, .class-text h3{
+        font-size: 100%;
+    }
     .cta {
         height: 50vh;
     }
@@ -775,7 +781,12 @@ font-size: 12px;
     @media(max-width:850px){
         .logo-container {
             flex-basis: 28%;
-            justify-content: space-between;
+            justify-content: flex-start;
+            gap:5%;
+        }
+        .carousel-text{
+            top:40%;
+            width:50%;
         }
     
         .sign-up {
@@ -793,9 +804,10 @@ font-size: 12px;
         }
         .footer-hours{
             flex-direction: row;
+            align-items:last baseline;
             justify-content: center;
             order:5;
-            width:100%;
+            width:120%;
         }
 
     }
@@ -811,12 +823,15 @@ font-size: 12px;
             font-size: 80%;
             padding: 8px 14px 9px 25px;
         }
+        #menu{
+            font-size: 140%;
+        }
         .carousel-item .carousel-text>h3 {
             letter-spacing: 2px;
             font-size: 10px;
         }
         .carousel-text{
-            top:100px;
+            top:35%;
             width:40%;
         }
         .class-text{
@@ -843,7 +858,7 @@ font-size: 12px;
 
         .logo-container {
             flex-basis: 35%;
-            justify-content: space-between;
+          
         }
 
         .sign-up {
@@ -884,6 +899,9 @@ font-size: 12px;
             font-size: 60%;
             padding: 6px 12px 7px 23px;
         }
+        .carousel-inner{
+            height:100vh;
+        }
         .carousel-text{
             top:60px;
             left:40px;
@@ -922,6 +940,12 @@ font-size: 12px;
         }
         .cta {
             height: 30vh;
+        }
+        .footer-hours > h3{
+            font-size: 50%;
+        }
+        .footer-about > h3, .footer-contact > h3{
+            font-size: 60%;
         }
        
     }

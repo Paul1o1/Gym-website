@@ -59,7 +59,7 @@ p{
 .about-feature{
     display:flex;
     padding:10% 5%;
-    justify-content: space-between;
+   gap:15%;
     align-items: center;
     margin-top: 2%;
     background-color: black;
@@ -71,7 +71,7 @@ p{
 }
 .about-feature-image> img{
     position: relative;z-index: 10;
-    width:30vw;
+    width:40vw;
 
 }
 .about-feature-text{
@@ -98,11 +98,22 @@ p{
     align-items: center;
     width:50%;
 }
+.footer{
+    padding:3% 2%;
+}
 @media(max-width:1125px){
+    li a::before{
+        background-color:transparent;
+    }
+    #about{
+        color:white;
+    }
     .about-img{
         height:200px;
     }
-   
+    .nav-items ul {
+        left: -346px;
+    }
 }
 @media(max-width:1047px){
    
@@ -115,4 +126,29 @@ p{
 @media(max-width:850px){
  
 
+}
+@media(max-width:420px){
+   .about-feature{
+    gap:2%;
+   }
+    .about-feature-text p {
+        font-size: 70%;
+        line-height: 20px;
+    }
+     .class-text{
+            width: 100%;
+        }
+        .about-feature-image> img{
+           
+            width:50vw;
+        
+        }
+        .about-membership-text{
+            width:80%;
+            text-align: center;
+        }
+        .about-text{
+           
+            width:70vw;
+        }
 }
