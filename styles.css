@@ -997,7 +997,7 @@ font-size: 12px;
 
     @media(max-width:490px){
         #menu{
-            font-size: 150%;
+            font-size: 220%;
             line-height: 50px;
         }
         .logo-container{
@@ -1005,7 +1005,7 @@ font-size: 12px;
             gap:5px;
         }
         .logo-container img{
-           width:120%;
+           width:130%;
         }
        .sign-up{
         flex-basis: 40%;
