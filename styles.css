@@ -22,7 +22,7 @@ nav {
     justify-content: space-between;
     align-items: baseline;
     width: 100%;
-    padding:0 10px;
+    padding:15px 10px 0;
 }
 
 #menu-bar,
@@ -47,21 +47,13 @@ label {
 .logo-container {
     display: flex;
     align-items: baseline;
+    align-self: flex-end;
     flex-basis: 30%;
 }
-
-.logo-container h1 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 30px;
-    color: #D2D3C9;
-    /* font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif; */
+.logo-container img{
+    width: 90%;
 }
 
-span {
-    color: #FF5F00;
-    font-size: 50px;
-}
 
 .nav-items {
     display: flex;
@@ -113,8 +105,7 @@ li a:hover::before,
 a:hover {
     transform: scalex(1);
     transform-origin: left;
-    color: orangered;
-
+    color: #ff4500;
 }
 
 .sign-up {
@@ -262,10 +253,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 25px;
-   
-    color: rgb(11, 11, 11);
+   background-color: rgb(45, 45, 45);
+    color: white;
     margin-top: 20px;
-    padding: 40px ;
+    padding: 25px 10px ;
 }
 .class-border{
     height: 3px;
@@ -295,66 +286,120 @@ a:hover {
                
 .classes {
     display: flex; 
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 
 }
-
+.img-container{
+    background-color: black;
+    position: relative;
+}
 .img-container img {
-    display:flex;
-    /* height: 400px; */
-    width: 20vw;
-   
+    aspect-ratio: 423/283;
+    opacity:0.5;
+    display:flex; 
+    width:31vw;
 }
 
 .class-items {
     display:flex;
     position: relative;
-    margin-bottom: 20px;
-    flex-basis: 45%;
-    border-radius: 15px;
-    border-right: 3px solid gray;
     justify-content: space-between;
-    /* border: 2px solid orangered; */
+   
     overflow: hidden;
    background-color: white;
 
    }
 
-.class-item-title {
-    
-    position:absolute;
-    left:-220px;
-    bottom:0;
-    background-color: orangered;
-    clip-path: polygon(0 0%, 81% 0%, 100% 100%, 0% 100%);
-    padding-right: 30px;
-    transition: all 0.7s ease-in-out;
-}
-.img-container:hover + .class-item-title{
-     left:0;
-    }
-.class-text{
-    display:flex;
-    width: 40%;
-    flex-direction: column;
-    padding:10px;
-    justify-content: flex-end;
-}
-.class-items a {
-    display:flex;
-    align-items: flex-end;
-    justify-self: flex-end;
+.class-item-title{
+    opacity: 1;
+    color: white;
+    position: absolute;
     font-family: 'Montserrat', sans-serif;
+    top:80%;
+    left:5%;
+    width:100%;
+    font-size: 1.5vw;
+    transition: all 0.6s ease-in-out;  
+}
+.class-item-title h2{
+    font-weight: 800;
+}
+.class-item-p{
+    width:60%;
+    display: none;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+
+   .img-container h2{
+    font-size: 160%;
+   }
+   .class-item-p a{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    padding-left: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 110%;
+   }
+   .class-item-p a:hover{
+    color:silver;
+   }
+   .class-item-p a i{
+    padding-left: 5%;
+   }
+.class-1:hover .class-item-title:nth-of-type(1){
+top:30%;
 }
-.class-items a:hover{
-    color: orangered;
-}
+.class-1:hover .class-item-p:nth-of-type(1){
+    display: block;
+    }
+    .class-1:hover  .img-container:nth-of-type(1){
+        background: rgb(220,95,0);
+        background: linear-gradient(0deg, rgba(220,95,0,1) 30%, rgba(138,132,132,1) 78%);
+    }
+   
+    .class-2:hover .class-item-title-2{
+        top:30%;
+        }
+        .class-2:hover .class-item-p:nth-of-type(1){
+            display: block;
+            }
+            .class-2:hover  .img-container:nth-of-type(1){
+                background: rgb(220,95,0);
+                background: linear-gradient(0deg, rgba(220,95,0,1) 30%, rgba(138,132,132,1) 78%);
+            }
+            .class-3:hover .class-item-title:nth-of-type(1){
+                top:30%;
+                }
+                .class-3:hover .class-item-p:nth-of-type(1){
+                    display: block;
+                    }
+                    .class-3:hover  .img-container:nth-of-type(1){
+                        background: rgb(220,95,0);
+                        background: linear-gradient(0deg, rgba(220,95,0,1) 30%, rgba(138,132,132,1) 78%);
+                    }
+                    .class-4:hover .class-item-title:nth-of-type(1){
+                        top:30%;
+                        }
+                        .class-4:hover .class-item-p:nth-of-type(1){
+                            display: block;
+                            }
+                            .class-4:hover  .img-container:nth-of-type(1){
+                                background: rgb(220,95,0);
+                                background: linear-gradient(0deg, rgba(220,95,0,1) 30%, rgba(138,132,132,1) 78%);
+                            }
+                            .class-5:hover .class-item-title:nth-of-type(1){
+                                top:30%;
+                                }
+                                .class-5:hover .class-item-p:nth-of-type(1){
+                                    display: block;
+                                    }
+                                    .class-5:hover  .img-container:nth-of-type(1){
+                                        background: rgb(220,95,0);
+                                        background: linear-gradient(0deg, rgba(220,95,0,1) 30%, rgba(138,132,132,1) 78%);
+                                    }
+
 
 
                             /* call to action page */
@@ -378,9 +423,14 @@ a:hover {
 }
 
 .cta-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     z-index: 10;
     position: absolute;
+    width:120%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -395,6 +445,7 @@ a:hover {
 .cta-item {
     display: flex;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
     font-weight: 600;
     font-size: 30px;
 }
@@ -451,11 +502,17 @@ a:hover {
     font-family: 'Roboto Slab', serif;
 }
 
-.payment-plan h3,.payment-plan
+.payment-text h3,.payment-text
+h2 {
+    padding: 5% 0;
+    text-align: center;
+}
+.payment-text-b h3,.payment-text-b
 h2 {
     padding: 8% 0;
     text-align: center;
 }
+
 .payment-plan h2{
     font-weight: 800;
 }
@@ -577,6 +634,12 @@ margin-bottom: 30px;
    opacity: 0;
    transition: all 0.7s ease-in-out;
 }
+.trainer-links a{
+    color: silver;
+}
+.trainer-links a:hover{
+    color:orangered;
+}
 .trainer-1:hover .trainer-links-1{
     opacity: 1;
     top:40%;
@@ -648,10 +711,6 @@ font-size: 12px;
     display: flex;
     flex-direction: column;
 
-}
-.footer-hours h3{
-    border-right: 1px solid white;
-    padding-left:3%;
 }
 
 
@@ -825,6 +884,9 @@ font-size: 12px;
         .sign-up {
             flex-basis: 25%;
         }
+        .img-container img {
+            width:46vw;
+        }
         .footer{
             gap:20%;
         }
@@ -843,6 +905,11 @@ font-size: 12px;
             order:5;
             width:120%;
         }
+        .footer-hours h3{
+            border-right: 1px solid white;
+            padding-left:3%;
+        }
+        
        
 
     }
@@ -903,10 +970,7 @@ font-size: 12px;
         .class-items{
             justify-content: flex-start;
         }
-        .classes{
-            flex-direction: column;
-            gap:10px;
-        }
+       
         #carousel-btn{
             font-size: 70%;
         }
@@ -983,8 +1047,11 @@ font-size: 12px;
             height: 3px;
         width: 300px;
         }
+        .img-container img {
+            width:46vw;
+        }
         .cta {
-            height: 30vh;
+            height: 25vh;
         }
         img{
             width:42vw;
