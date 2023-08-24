@@ -46,7 +46,7 @@ label {
 
 .logo-container {
     display: flex;
-    align-items: baseline;
+    align-items:center;
     align-self: flex-end;
     flex-basis: 30%;
 }
@@ -132,6 +132,9 @@ a:hover {
    
     height: 85vh;
 
+}
+#third-slide{
+    aspect-ratio: 1349/667
 }
 
 .carousel-text {
@@ -274,6 +277,7 @@ a:hover {
     font-weight:800;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     /* text-shadow: 5px 5px 8px black; */
 }
@@ -323,7 +327,7 @@ a:hover {
     transition: all 0.6s ease-in-out;  
 }
 .class-item-title h2{
-    font-weight: 800;
+    font-weight: 600;
 }
 .class-item-p{
     width:60%;
@@ -622,6 +626,9 @@ margin-bottom: 30px;
     justify-content: center;
     gap:40px;
 }
+.trainer-img{
+    aspect-ratio: 153.3/230;
+}
 .trainer-links{
    display: flex;
     gap:5%;
@@ -676,7 +683,7 @@ border-radius: 50%;
     
 }
 .trainer-text h3{
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 800;
 }
 .trainer-text p{
@@ -863,7 +870,7 @@ font-size: 12px;
         width:60vw;
        }
        .trainers-section{
-        padding-top:55% ;
+        padding-top:60% ;
     }
     .footer-logo p{
         width: 25vw;
@@ -990,68 +997,88 @@ font-size: 12px;
 
     @media(max-width:490px){
         #menu{
-            font-size: 100%;
+            font-size: 150%;
             line-height: 50px;
         }
         .logo-container{
             justify-content: flex-start;
             gap:5px;
         }
-        .logo-container h1{
-            font-size: 22px;
+        .logo-container img{
+           width:120%;
         }
-        span{
-            font-size: inherit;
-        }
+       .sign-up{
+        flex-basis: 40%;
+       }
         .sign-up a{
-            font-size: 60%;
+            font-size: 80%;
             padding: 6px 12px 7px 23px;
+        }
+        .nav-items ul {
+            width: 35%;
+        }
+        .d-block , #third-slide{
+            aspect-ratio: 1349/1200;
         }
         
         .carousel-text{
-            top:60px;
+            top:140px;
             left:40px;
-            width:40%;
+            width:50%;
         }
        
-        .carousel-text>h1 {
+       .carousel-text >h1 {
           
-            font-size: 15px;
-            letter-spacing: 1px;
+            font-size: 28px;
+            letter-spacing: 2px;
         
         }
         .carousel-text>h3 {
           
              letter-spacing: 1px;
-             font-size: 5px;
+             font-size: 10px;
            
         }
         #carousel-btn{
             font-size: 60%;
         }
-       
-       
+       .classes{
+        flex-direction: column;
+       }
+       .img-container img {
+        width:100%;
+    }
+       .class-item-p{
+        font-size: 3.5vw;
+       }
+       .class-item-title{
+        font-size: 6vw;
+       }
         .class-text{
             width: 100%;
         }
         .class-text p, .class-text a, .class-text h3{
             font-size: 60%;
         }
+        .class-section{
+            padding:25px 0 0;
+        }
         .community-text {
            padding-left: 0;
         }
         .community-images {
-            left: -45px;
+            left: -140px;
+        }
+        .community-images> * {
+            width: 50vw;
         }
         .boarder, .class-border{
             height: 3px;
         width: 300px;
         }
-        .img-container img {
-            width:46vw;
-        }
+       
         .cta {
-            height: 25vh;
+            height: 40vh;
         }
         img{
             width:42vw;
