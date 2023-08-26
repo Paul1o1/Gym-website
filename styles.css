@@ -456,8 +456,11 @@ top:30%;
 
 .cta-item>* {
     border-right: thick solid #ff0000;
-    padding-left: 5px;
+    padding: 0 10px;
     text-align: center;
+}
+.cta-p:nth-last-of-type(1){
+    border:none;
 }
                       /* payment plan section */
 .payment-container{
@@ -687,7 +690,7 @@ border-radius: 50%;
     font-weight: 800;
 }
 .trainer-text p{
-    font-size: 15px;
+    font-size: 18px;
     
 }
 .footer{
@@ -699,7 +702,22 @@ border-radius: 50%;
     color:white;
     font-family:  'Montserrat',sans-serif;
     margin-top: 60px;
-    padding: 3% 3% 3% 5%;
+    padding: 3% 3% 1% 5%;
+}
+.copywright{
+    border-top: 1px solid white;
+    margin-top: 40px;
+    padding-top: 10px;
+    width:100%;
+    text-align: center;
+    font-size: 80%;
+}
+.social-media{
+    display: flex;
+    gap:3%;
+}
+.social{
+    font-size: 2vw;
 }
 .footer-item{
     padding-top: 3%;
@@ -775,7 +793,7 @@ font-size: 12px;
         position: absolute;
         width: 30%;
         height: fit-content;
-        top: 60px;
+        top: 85px;
         left: -336px;
         padding-left: 10px;
         background-color: #DC5F00;
@@ -790,6 +808,7 @@ font-size: 12px;
 
     li a::before {
         background-color: none;
+        border-radius: 0;
     }
 
     .carousel-inner {
@@ -820,11 +839,12 @@ font-size: 12px;
     }
 
     .cta-item {
-        font-size:70%;
+        font-size:120%;
+        width:90vw;
     }
 
     .cta-title h1 {
-        font-size: 110%;
+        font-size: 150%;
     }
 
     .payment-text>h3,
@@ -835,10 +855,13 @@ font-size: 12px;
         font-size: 40px;
     }
     .community-text p{
-        font-size: 15px;
+        font-size: 150%;
     }
     .community-section{
        
+    }
+    .social{
+        font-size: 4vw;
     }
 }
 
@@ -853,11 +876,12 @@ font-size: 12px;
             padding:0px 150px;
         }
         .community-images{
-           align-self: flex-start;
+           /* align-self: flex-start; */
+           left:-23vw;
            
         }
         .community-images> *{
-            width:36vw;
+            width:48vw;
     }
     .community-text{
        align-items: center;
@@ -866,8 +890,8 @@ font-size: 12px;
         text-align: center;
     }
        .community-text > p{
-        text-align: center;
-        width:60vw;
+        text-align: left;
+        width:90vw;
        }
        .trainers-section{
         padding-top:60% ;
@@ -911,6 +935,9 @@ font-size: 12px;
             justify-content: center;
             order:5;
             width:120%;
+        }
+        .copywright{
+            order: 6;
         }
         .footer-hours h3{
             border-right: 1px solid white;
@@ -990,9 +1017,9 @@ font-size: 12px;
         .boarder{
             width:400px;
         }
-        .community-images{
+        /* .community-images{
             left: -10%;
-        }
+        } */
     }
 
     @media(max-width:490px){
@@ -1066,9 +1093,8 @@ font-size: 12px;
         .community-text {
            padding-left: 0;
         }
-        .community-images {
-            left: -140px;
-        }
+        .community-text p
+      
         .community-images> * {
             width: 50vw;
         }
